@@ -18,7 +18,7 @@ const BlogsNavbar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/dashboard">Dashboard</Nav.Link>
+            <Nav.Link href="/">Dashboard</Nav.Link>
           </Nav>
           <Button
           className="m-3"

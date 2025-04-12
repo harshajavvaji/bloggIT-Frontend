@@ -40,7 +40,7 @@ const Login = () => {
 
   useEffect(() => {
     if (localStorage.getItem('token') && localStorage.getItem('token') !== undefined) {
-      navigate('/dashboard')
+      navigate('/')
     }
   }, [navigate])
 
@@ -72,7 +72,7 @@ const Login = () => {
         localStorage.setItem('user', JSON.stringify(data?.user))
         localStorage.setItem('token', data?.token)
         // Redirect to dashboard after successful login
-        navigate("/dashboard");
+        navigate("/");
       } else {
         setMessage(data.message || "Login failed");
       }
