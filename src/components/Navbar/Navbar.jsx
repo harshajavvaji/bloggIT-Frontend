@@ -5,8 +5,10 @@ import Navbar from "react-bootstrap/Navbar";
 import { FaRegCircleUser } from "react-icons/fa6";
 import Button from "react-bootstrap/Button";
 import { FaBlogger } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const BlogsNavbar = () => {
+  const navigate = useNavigate();
   return (
     <Navbar expand="lg" className="bg-body-tertiary px-3">
       <Container fluid>
@@ -25,7 +27,7 @@ const BlogsNavbar = () => {
             variant="outline-danger"
             onClick={() => {
               localStorage.removeItem("token");
-              window.location.href = "/login";
+              navigate("/login");
               localStorage.removeItem('user')
             }}
           >
