@@ -15,7 +15,7 @@ const SignUp = () => {
 
   useEffect(() => {
     if (localStorage.getItem('token') && localStorage.getItem('token') !== undefined) {
-      navigate('/dashboard')
+      navigate('/')
     }
   }, [navigate]);
 
