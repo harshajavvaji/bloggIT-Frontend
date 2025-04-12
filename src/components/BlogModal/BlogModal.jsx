@@ -106,7 +106,7 @@ const BlogModal = ({reload, setReload, setBlog, blog, isUpdate, setIsUpdate}) =>
         <Form.Group className="d-flex" controlId="formImage">
               {/* <div className="d-flex"> */}
                 
-              <Form.Label className='btn btn-primary btn-sm'> {!blog?.image ? 'Upload ProfilePic' : 'Update'} </Form.Label>
+              <Form.Label className='btn btn-primary btn-sm'> {!blog?.image ? 'Upload Blog Pic' : 'Update Blog Pic'} </Form.Label>
               <input
                 style={{ display: 'none' }}
                 id='formImage'
